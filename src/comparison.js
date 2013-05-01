@@ -102,7 +102,7 @@ cubism_contextPrototype.comparison = function() {
         if (i == null) i = width - 1;
         var valuePrimary = primary_.valueAt(i),
             valueSecondary = secondary_.valueAt(i),
-            valueChange = (valuePrimary - valueSecondary) / valueSecondary;
+            valueChange = (valuePrimary - valueSecondary) / valuePrimary;
 
         spanPrimary
             .datum(valuePrimary)
